@@ -1,0 +1,9 @@
+1. modprobe gpio-altera.ko
+
+2. modprobe gpio_interrupt.ko gpio_number=n
+n get from:
+# ls /sys/class/gpio/
+export       gpiochip246  gpiochip248  gpiochip252  unexport
+
+eg:
+ modprobe gpio_interrupt.ko gpio_number=248
